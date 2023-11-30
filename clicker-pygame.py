@@ -7,6 +7,8 @@ screen = pygame.display.set_mode((size[0][0], size[0][1] - 55), pygame.RESIZABLE
 font = pygame.font.SysFont("arial", 36)
 text = font.render(index.casino_money.value_money(), True, (0, 0, 0))
 text_rect = text.get_rect(center=(size[0][0] // 2, (size[0][1] - 55) // 2))
+¨
+
 
 pygame.display.flip()
 mainloop = True
