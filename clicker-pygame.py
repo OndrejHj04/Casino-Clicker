@@ -1,13 +1,13 @@
 import pygame
 
-background_colour = (255,255,255)
-(width, height) = (300, 200)
-screen = pygame.display.set_mode((width, height))
-pygame.display.set_caption('Tutorial 1')
-screen.fill(background_colour)
+pygame.init()
+size = pygame.display.get_desktop_sizes()
+screen = pygame.display.set_mode((size[0][0], size[0][1] - 55), pygame.RESIZABLE)
+
 pygame.display.flip()
-running = True
-while running:
-  for event in pygame.event.get():
-    if event.type == pygame.QUIT:
-      running = False
+mainloop = True
+
+while mainloop:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            mainloop = False
